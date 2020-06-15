@@ -1,16 +1,21 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
 
 
-export default class Header extends Component {
+const Uploader = () => {
+    
 
-    render(){
-        return (
+
+    return (
+        <div>
+            <h1>Foto Uploader</h1>
+
             <div>
-
-                <h1>Uploader</h1>
-                               
+                <input type='file' placeholder='Kies Afbeelding'></input>
+                <button>Upload Afbeelding</button>
             </div>
-        )
-    }
+
+        </div>
+    )
 };
+
+export default Uploader;

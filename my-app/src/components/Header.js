@@ -6,13 +6,11 @@ export default class Header extends Component {
 
     render(){
         return (
-            <div>
+            <div id='header'>
 
-                <Link to='/'>Home</Link>
-                <br />
-                <Link to='/Countdown'>Countdown</Link>
-                <br />
-                <Link to='/Uploader'>Uploader</Link>
+                <Link className='routingButtons' to='/'>Home</Link>
+                <Link className='routingButtons' to='/Countdown'>Countdown</Link>
+                <Link className='routingButtons' to='/Uploader'>Uploader</Link>
                                
             </div>
         )
