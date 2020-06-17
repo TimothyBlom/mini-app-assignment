@@ -1,11 +1,11 @@
 body {
-  text-align: center;
   background-color: rgb(44, 44, 44);
   color: white;
 }
 
 #header {
   margin: 50px;
+  text-align: center;
 }
 
 .routingButtons {
@@ -15,7 +15,35 @@ body {
   font-size: 20px;
 }
 
-.imagePreview {
-  width: 500px;
-  margin: 100px;
+.uploadButton {
+  margin-left: 50%;
+  transform: translate(-50%);
+  border: 1px solid white;
+}
+
+.uploadPreviewContainer {
+  display: flex;
+  border: solid white;
+  width: 900px;
+  margin: 50px;
+}
+
+.uploaderImage {
+  height: 200px;
+  margin: 20px;
+  margin-right: 100px;
+}
+
+.uploaderName{
+  padding-top: 80px;
+  padding-right: 100px;
+  text-align: center;
+  width: 200px;
+}
+
+.uploaderTime {
+  display: flex;
+  width: 40px;
+  padding-top: 80px;
+  text-align: center;
 }
