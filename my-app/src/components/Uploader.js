@@ -22,6 +22,8 @@ const Uploader = () => {
     return (
         <div>
 
+            <h1>Afbeelding Uploaden</h1>
+
             <input type="file" className="uploadButton" onChange={handleChange} />
             <button>Upload Afbeelding</button>
 
@@ -29,7 +31,7 @@ const Uploader = () => {
 
             <label>
                 <div className='uploadPreviewContainer'>
-                    <img className='uploaderImage' src={image.imagePreview} />
+                    <img className='uploaderImage' src={image.imagePreview} alt='' />
                     <h3 className='uploaderName'>{name.namePreview}</h3>
                     <div className='uploaderTime'>
                         <h3 className='uploaderHour'>{time.timeHourPreview}</h3>
