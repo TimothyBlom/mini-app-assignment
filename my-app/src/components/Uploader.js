@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 
 const Uploader = () => {
@@ -24,8 +24,10 @@ const Uploader = () => {
 
             <h1>Afbeelding Uploaden</h1>
 
-            <input type="file" className="uploadButton" onChange={handleChange} />
-            <button>Upload Afbeelding</button>
+            <form className="uploadInput">
+                <input className='chooseFile' useRef='fileInput' type="file" onChange={handleChange}/>
+                <input className='submitFile button' type='submit' value='Upload afbeelding' />
+            </form>
 
             <br />
 

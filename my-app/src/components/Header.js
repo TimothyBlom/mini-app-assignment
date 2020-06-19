@@ -6,9 +6,12 @@ const Header = () => {
     return (
         <div id='header'>
 
-            <Link className='routingButtons' to='/'>Home</Link>
+<div className='routingButtonsContainer button'>
             <Link className='routingButtons' to='/Countdown'>Countdown</Link>
-            <Link className='routingButtons' to='/Uploader'>Uploader</Link>
+            </div>
+            <div className='routingButtonsContainer button'>
+            <Link className='routingButtons' to='/Uploader'>Upload Afbeelding</Link>
+            </div>
                                
         </div>
     )

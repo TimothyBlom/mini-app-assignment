@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 const Countdown = () => {
-    const [countdownTime, setCountdownTime] = useState(0);
+    const [countdownTime, setCountdownTime] = useState(5);
     const [countdownActive, setCountdownActive] = useState(false);
   
     const toggle = () => {
@@ -9,7 +9,7 @@ const Countdown = () => {
     }
   
     const reset = () => {
-        setCountdownTime(0);
+        setCountdownTime(5);
         setCountdownActive(false);
     }
   
@@ -28,21 +28,20 @@ const Countdown = () => {
     return (
       <div className='countdownContainer'>
 
-        <h1>CountDown</h1>
+        <h1>Countdown Timer</h1>
 
         <div className="counter">
           {countdownTime}s
         </div>
 
-        <input className='counterInput' type='number' placeholder='Seconden' />
+        <input className='counterInput' type='number' placeholder='Seconden...' />
 
-        <div className="row">
+        <div>
 
-          <button className={`button button-primary button-primary-${countdownActive ? 'active' : 'inactive'}`} onClick={toggle}>
+          <button className={`counterButton button ${countdownActive ? 'active' : 'inactive'}`} onClick={toggle}>
             {countdownActive ? 'Pauze' : 'Start'}
           </button>
-
-          <button className="countdownButtons" onClick={reset}> Reset </button>
+          <button className="counterButton button" onClick={reset}> Reset </button>
 
         </div>
 

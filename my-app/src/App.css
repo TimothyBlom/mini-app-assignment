@@ -1,28 +1,58 @@
 body {
   background-color: rgb(44, 44, 44);
   color: white;
-}
-
-h1 {
   text-align: center;
 }
 
+.button {
+  background-color: rgb(0, 119, 255);
+  color: white;
+  border: 3px solid rgb(0, 119, 255);
+  border-radius: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/* Header */
 #header {
   margin: 50px;
-  text-align: center;
+  display: flex;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
 .routingButtons {
   text-decoration: none;
   color: white;
-  margin: 50px;
   font-size: 20px;
+  padding: 0px 5px;
 }
 
-.uploadButton {
-  margin-left: 50%;
-  transform: translate(-50%);
-  border: 1px solid white;
+.routingButtonsContainer {
+  width: 300px;
+  margin: 0 50px;
+}
+
+/* Uploader */
+.uploadInput {
+  margin-top: 50px;
+}
+
+.chooseFile {
+  width: 400px;
+  border: 2px solid rgb(0, 119, 255);
+  border-radius: 10px;
+}
+
+.chooseFile:hover {
+  cursor: pointer;
+}
+
+.submitFile {
+  background-color: none;
+  margin-left: 10px;
 }
 
 .uploadPreviewContainer {
@@ -40,7 +70,6 @@ h1 {
 .uploaderName{
   padding-top: 80px;
   padding-right: 100px;
-  text-align: center;
   width: 200px;
 }
 
@@ -48,14 +77,23 @@ h1 {
   display: flex;
   width: 40px;
   padding-top: 80px;
-  text-align: center;
 }
 
-.countdownContainer {
-  text-align: center;
-}
-
+/* Countdown */
 .counter {
   margin: 50px;
   font-size: 100px;
+}
+
+.counterInput {
+  border: 2px solid rgb(0, 119, 255);
+  border-radius: 10px;
+  background-color: rgb(44, 44, 44);
+  padding: 2px 5px;
+  color: white;
+}
+
+.counterButton {
+  margin: 10px;
+  width: 70px;
 }
